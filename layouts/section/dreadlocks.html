@@ -1,0 +1,83 @@
+{{ partial "header.html" . }}
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							{{ partial "profile.html" . }}
+					  </div>
+						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+							<main role="main">
+							{{ partial "tags.html" . }}
+								<div id="artist-wrapper">
+								 <div class="container-fluid">
+									 <div class="row">
+											 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+												 <section id="profile" class="container">
+												 <div class="row">
+													 <div id="avatar" class="col-md-12 col-lg-12 center-block">
+		                         <a href="/xizi">
+															 <img class="center-block" src="http://gogo.tattoo/xizi/images/xizi.jpg"/>
+														 </a>
+													 </div>
+												 </div>
+											 </section>
+									 <div class="one-column" id="list">
+										 {{ range .Data.Pages }}
+										 {{ if in .File.Path "xizi"}}
+											 <div class="pin">
+													 <a href="/xizi/dreadlocks/{{ .File.TranslationBaseName }}">
+														 <figure>
+															 {{ if .Params.image_ipfs }}
+																 <img src="https://gateway.ipfs.io/ipfs/{{ .Params.image_ipfs }}" alt="{{ .Title }}" class="tattoo-image fadeIn"/>
+															 {{ else }}
+																 <img src="{{ $.Site.BaseURL }}images/doge.png" alt="Please upload photos" class="tattoo-image">
+															 {{ end }}
+															 <figcaption>{{ .Title }}</figcaption>
+														 </figure>
+													 </a>
+											 </div>
+										 {{ end }}
+										 {{ end }}
+									 </div>
+										 </div>
+										 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+											 <section id="profile" class="container">
+											 <div class="row">
+												 <div id="avatar" class="col-md-12 col-lg-12 center-block">
+	                         <a href="/gogo">
+														 <img class="center-block" src="http://gogo.tattoo/gogo/images/gogo.jpg"/>
+													 </a>
+												 </div>
+											 </div>
+											 </section>
+											 <div class="one-column" id="list">
+												 {{ range .Data.Pages }}
+												 {{ if in .File.Path "gogo"}}
+													 <div class="pin">
+															 <a href="/gogo/dreadlocks/{{ .File.TranslationBaseName }}">
+																 <figure>
+																	 {{ if .Params.image_ipfs }}
+																		 <img src="https://gateway.ipfs.io/ipfs/{{ .Params.image_ipfs }}" alt="{{ .Title }}" class="tattoo-image fadeIn"/>
+																	 {{ else }}
+																		 <img src="{{ $.Site.BaseURL }}images/doge.png" alt="Please upload photos" class="tattoo-image">
+																	 {{ end }}
+																	 <figcaption>{{ .Title }}</figcaption>
+																 </figure>
+															 </a>
+													 </div>
+												 {{ end }}
+											   {{ end }}
+											 </div>
+										 </div>
+								 </div>
+							 </main>
+
+
+					</div>
+				</div>
+			</div>
+
+	{{ partial "js.html" . }}
+
+
+	{{ partial "footer.html" . }}

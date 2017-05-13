@@ -1,0 +1,8 @@
+
+[0.0.1-alpha]
+  + the first experimental tattoo studio page
+  + tags
+  + ipfs support
+  + tattoo section
+  + shop section
+  + basic static buildable distributable hugo site for studios

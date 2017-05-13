@@ -1,0 +1,65 @@
+baseurl = "http://gogo.tattoo/@aid_tattoo/"
+languageCode = "en-us"
+title = "Aid Tattoo"
+name = "aid_tattoo"
+copyright = "Aid Tattoo"
+googleAnalytics = "UA-79234406-1"
+
+DefaultContentLanguage = "en"
+DefaultContentLanguageInSubdir = "false"
+
+[Languages]
+  [Languages.en]
+    weight = 1
+  [Languages.zh]
+    weight = 3
+  [Languages.zh-hant]
+    weight = 2
+  [Languages.ru]
+    weight = 2
+
+[params]
+# The path must be relative to the static folder
+favicon = "favicon.ico"
+
+[params.version]
+  name = "0.0.3-alpha"
+  code = 3
+
+[taxonomies]
+  tag = "tags"
+
+[params.profile]
+  avatar_ipfs = "QmamnDpjZ3uceMr8AnXmfdvq8SSKNKT7Vx7uwbFHAfkmya"
+  description = "profile.description"
+  since = "2017"
+  location = "Gatchina"
+
+  [params.profile.contact]
+    chat = "contact.chat"
+    # email = "contact.email"
+    # wechat_qr = "contact.wechat_qr"
+    line = "contact.line"
+    # steemit = "contact.steemit"
+		headline = "contact.headline"
+		description = "contact.description"
+    # ... and so on...
+    # TODO: maybe there's a better way to organize it?
+
+# Navigation
+[params.nav]
+  tattoo = "nav.tattoo"
+  henna = "nav.henna"
+  design = "nav.design"
+  piercing = "nav.piercing"
+  dreadlocks = "nav.dreadlocks"
+  contact = "nav.contact"
+
+[params.navigation]
+  brand = "aid_tattoo"
+
+  [params.navigation.links]
+    about     = "nav.about"
+    services  = "nav.services"
+    portfolio = "nav.portfolio"
+    # Contact section

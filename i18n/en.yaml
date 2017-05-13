@@ -1,0 +1,29 @@
+
+- id: contact.headline
+  translation: "Follow our public groups"
+- id: contact.description
+  translation: ""
+
+- id: contact.email
+  translation: ""
+- id: contact.chat
+  translation: ""
+- id: contact.steemit
+  translation: ""
+- id: contact.wechat_qr
+  translation: ""
+
+- id: nav.tattoo
+  translation: "Tattoo"
+- id: nav.design
+  translation: "Design"
+- id: nav.henna
+  translation: "Henna"
+- id: nav.piercing
+  translation: "Piercing"
+- id: nav.dreadlocks
+  translation: "Dreadlocks"
+- id: profile.description
+  translation: "Aid Tattoo is an awesome place to get inked, if you're around Saint-Petersburg, Russia."
+- id: nav.contact
+  translation: "Contact us"
